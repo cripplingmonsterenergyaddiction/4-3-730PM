@@ -1,0 +1,257 @@
+{{> header}}
+    <div class="whole-container">
+        <div class="whole">
+                <div class="left-container">
+                    <div class="left">
+                        {{#each userData}}
+                        <div class="top-profile-container">
+                            <div class="top-div-profile">
+                                <div class="top-left-profile">
+                                    <img src="{{avatar_img}}" alt="" class="top-left-profile-photo">
+                                </div>
+                                <div class="top-middle-profile">
+                                    <div class="top-middle-profile-name">
+                                        {{username}}
+                                    </div>
+                                </div>
+                                <div class="top-right-profile">
+                                    <div class="top-right-profile-edit-container">
+                                        <div class="top-right-profile-edit">
+                                            <button id="myBtn">Edit Profile</button>
+                                            <!-- The Modal -->
+                                           <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">×</span>
+        <!-- Added enctype attribute for file upload -->
+        <form id="editProfileForm" enctype="multipart/form-data">
+            <img id="profilePic" src="images/profile-pic.jpg" alt="Profile Picture" style="width:100px;height:100px;"><br>
+            <label for="img">Select image:</label>
+            <input type="file" id="img" name="img" accept="image/*"><br>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="desc">Short Description:</label><br>
+            <textarea id="desc" name="description"></textarea><br>
+            <!-- Changed to a submit input for proper form submission -->
+            <input type="submit" value="Save Changes">
+        </form>
+        <button id="deleteAccountBtn" style="background-color: red; color: white;">Delete Account</button>
+    </div>
+</div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="middle-container">
+                            <div class="bio-container">
+                                <div class="bio">
+                                   {{description}}
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        {{/each}}
+                        <div class="bottom-middle-container">
+                            <div class="bottom-middle">
+                                <ul class = "ul-curr"> Post </ul>
+                                <ul class = "ul"> Upvoted </ul>
+                                <ul class = "ul"> Downvoted </ul>
+                            </div>
+                        </div>
+
+                        
+                        <div class="bottom-container">
+                            
+                            <div class="bottom">
+                            {{#each commentData}}
+                                <div class="review-container">
+                                    <div class="review">
+                                        
+                                        <div class="bottom-left-container">
+                                            <div class="left">
+                                                <div class="bottom-top-container">
+                                                    <div class="bottom-top">
+                                                        <div class="bottom-top-left-container">
+                                                            <div class="bottom-top-left">
+                                                                <img src="images/profile-pic.jpg" alt="" class="bottom-top-left-photo">
+                                                            </div>
+                                                        </div>
+                                                        <div class="bottom-top-middle-container">
+                                                            <div class="bottom-top-middle">
+                                                                <div class="bottom-top-name">
+                                                                    {{name}}
+                                                                </div>
+                                                                <div class="bottom-top-username">
+                                                                    {{username}}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bottom-top-right-container">
+                                                            <div class="bottom-top-right">
+                                                                <div class="bottom-top-right-setting-container">
+                                                                    <div class="setting">
+                                                                        <span class="material-symbols-outlined">
+                                                                            more_horiz
+                                                                            </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="bottom-top-right-date-container">
+                                                                    <div class="bottom-top-right-date">
+                                                                        February 9, 2024
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-left-middle-container">
+                                                    <div class="bottom-left-middle-title-container">
+                                                        <div class="bottom-left-middle-title">
+                                                            {{title}}
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-left-middle-description-container">
+                                                        <div class="bottom-left-middle-description">
+                                                            {{content}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-left-last">
+                                                    <div class="rating-random">
+                                                        <div class="rating-1">
+                                                          <div class="rating-food">
+                                                            <div class="food-text">
+                                                              Food
+                                                            </div>
+                                                            
+                                                            <div class="stars-rating">
+                                                                {{#each food-stars}}
+                                                              <img src="images/star.png" alt="" class="stars-1">
+                                                                {{/each}}
+                                                            </div>
+                                                          </div>
+                                                          <div class="rating-ambiance">
+                                                            Ambiance
+                                                            <div class="stars-rating">
+                                                              {{#each ambiance-stars}}
+                                                              <img src="images/star.png" alt="" class="stars-1">
+                                                                {{/each}}
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="rating-random-2">
+                                                        <div class="rating-2">
+                                                          <div class="rating-service">
+                                                            Service
+                                                            <div class="stars-rating">
+                                                              {{#each service-stars}}
+                                                              <img src="images/star.png" alt="" class="stars-1">
+                                                                {{/each}}
+                                                            </div>
+                                                          </div>
+                                                          <div class="rating-overall">
+                                                            <div class="overall-text">
+                                                              Overall
+                                                            </div>
+                                                            <div class="stars-rating">
+                                                              {{#each overall-stars}}
+                                                              <img src="images/star.png" alt="" class="stars-1">
+                                                                {{/each}}
+                                                            </div>
+                                                          </div>
+                                                        </div>      
+                                                </div>
+
+                                            
+                                                    
+                                            </div>
+                                            </div>    
+                                        </div>   
+                                        <div class="bottom-right-container">
+                                            <div class="right">
+                                                <div class="review-right">
+                                                    <div class="review-pic">
+                                                
+                                                      <img src="{{comment-img}}" alt="" class="review-photo">
+                                                    </div>
+                                                    <div class="vote">
+                                        
+                                                      <div class="post-ratings-container">
+                                                        <div class="post-rating">
+                                                         <span class="helpful">Helpful? </span>  
+                                                          <span class="post-rating-button material-icons">thumb_up</span>
+                                                          <span class="post-rating-count">{{numLike}}</span>
+                                                        </div>
+                                                        <div class="post-rating">
+                                                          <span class="post-rating-button material-icons">thumb_down</span>
+                                                          <span class="post-rating-count">{{numDislike}}</span>
+                                                        </div>
+                                                      </div>
+                                        
+                                        
+                                        
+                                                      
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                    
+                                </div>
+                                {{/each}}
+                            </div>
+                            
+                        </div>
+                            </div>
+                        </div>
+               
+                        
+                        <div class="discover-header-container">
+                        <div class="discover-header">
+                        Discover
+                        </div>
+                        <div class="whole-discover">
+                        {{#each restoData}}
+                                  <div class="establishment-container">
+                                    <div class="establishment">
+                                        <div class="establishment-last-name">
+                                            {{restoName}}
+                                        </div>
+                                        <div class="num-post-container">
+                                            <div class="num-post">
+                                                {{numPost}} post
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-container-discover">
+                                        <div class="rating-discover">
+                                            {{main_rating}} out of 5
+                                        </div>
+                                        <div class="star-rating-discover">
+                                            {{#each rating-stars}}
+                                            <img src="images/star.png" alt="" class="stars-1">
+                                            {{/each}}
+                                        </div>
+                                    </div>
+                                </div>
+                        {{/each}}          <!-- 5tj-->
+                    </div>  
+                </div>
+            </div>
+        </div>
+<div class="popup-login">
+    {{> popup-login}}
+</div>
+
+<div class="popup-signup">
+    {{> popup-signup}}
+</div>
+        <script src="user-profile.js"></script>

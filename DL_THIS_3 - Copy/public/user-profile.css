@@ -1,0 +1,1061 @@
+#back-button {
+  align-items: center;
+  align-content: center;
+  margin-left: -6%;
+  margin-top: 185px;
+  font-size: 50px;
+  margin-bottom: 0;
+  font-family: "Outfit";
+  color: #ffa800;
+}
+#back-link {
+  margin-right: -32%;
+  margin-top: 100px;
+  font-size: 50px;
+  margin-bottom: 0;
+  font-family: "Outfit";
+  color: #ffa800;
+}
+.back-button-container {
+  display: flex;
+}
+#back-arrow {
+  width: 10%;
+  margin-top: 7%;
+  margin-left: 12%;
+  margin-bottom: 1%;
+}
+
+.top-left-profile-photo {
+  width: 200px;
+  height: 200x;
+  border-radius: 100px;
+}
+.top-left-profile {
+  margin-left: 7.5%;
+}
+
+.top-profile-container {
+  width: 100%;
+  height: 200px;
+  margin-top: 200px;
+}
+
+.top-div-profile {
+  display: flex;
+  margin-top: -10%;
+}
+
+.ul-curr {
+  text-decoration: underline;
+  text-decoration-color: #ffa800;
+  text-decoration-thickness: 5px;
+}
+
+ul:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffa800;
+  text-decoration-thickness: 5px;
+  transition: all 0.3s ease;
+}
+
+.top-middle-profile {
+  margin-top: 7%;
+  padding-left: 3%;
+}
+.top-middle-profile-name {
+  font-family: "Inter";
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.top-middle-profile-username {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 200;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Button styling */
+#myBtn {
+  background-color: #ffa800;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* Form field styling */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ffa800; /* Changed border color */
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  border: none; /* Removed border */
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #ffa800;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff8800;
+}
+
+/* Font styling */
+body,
+input,
+textarea,
+button {
+  font-family: "Outfit", sans-serif;
+}
+
+/* Image styling */
+#profilePic {
+  border-radius: 50%; /* Made the image round */
+}
+
+.top-right-profile {
+  margin-top: 7%;
+  padding-left: 25%;
+}
+
+.left-container {
+  width: 65%;
+}
+
+.whole {
+  display: flex;
+  margin-top: 3%;
+}
+
+.middle-container {
+  margin-left: 7%;
+  margin-top: 3%;
+  margin-right: 5%;
+}
+.bio {
+  font-size: 22px;
+  text-align: justify;
+}
+.bottom-middle {
+  display: flex;
+  font-family: "DM Sans";
+  font-size: 32px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -2%;
+  justify-content: space-between;
+}
+
+.bottom-top {
+  display: flex;
+}
+.bottom-container {
+  margin-left: 7%;
+  padding-bottom: 5%;
+}
+
+.bottom-middle-container {
+  width: 100%;
+}
+
+.review-container {
+  border-radius: 50px;
+  margin-bottom: 30px;
+  background-color: antiquewhite;
+}
+
+.bottom-top-left-photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50px;
+}
+
+.bottom-top-middle-container {
+  width: 100%;
+}
+
+.bottom-top-name {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.bottom-top-username {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.material-symbols-outlined {
+  font-size: 50px !important;
+  margin-left: 68%;
+}
+
+.bottom-left-container {
+  width: 65%;
+}
+
+.bottom-top-container {
+  margin-left: 2%;
+  margin-top: 2%;
+  padding-top: 2%;
+}
+
+.bottom-top-left-container {
+  margin-right: 2%;
+}
+.review {
+  display: flex;
+  padding-bottom: 4%;
+  padding-left: 2%;
+}
+
+.bottom-top-right-container {
+  margin-left: 0%;
+  width: 100%;
+}
+
+.setting {
+  text-align: right;
+}
+.bottom-top-right-date {
+  font-size: 20px;
+  text-align: right;
+}
+
+.bottom-left-middle-container {
+  margin-left: 13%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+.bottom-left-middle-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+.bottom-left-middle-description {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.rating-random,
+.rating-random-2 {
+  display: flex;
+  margin-left: 7.5%;
+}
+
+.rating-random {
+  margin-top: 3%;
+}
+.rating-1,
+.rating-2 {
+  font-family: "DM Sans";
+  font-size: 30px;
+  display: flex;
+}
+
+.rating-food,
+.rating-service,
+.rating-ambiance,
+.rating-overall {
+  width: 350px;
+  display: flex;
+}
+
+.stars-1 {
+  width: 25px;
+  margin-top: 2px;
+}
+.stars-rating {
+  margin-left: 4%;
+}
+
+.food-text {
+  margin-right: 9%;
+}
+
+.overall-text {
+  margin-right: 12%;
+}
+
+.review-photo {
+  width: 350px;
+  border-radius: 50px;
+}
+
+.review-pic {
+  margin-top: 15%;
+  margin-left: 30%;
+}
+
+.review-whole {
+  display: flex;
+}
+
+.vote {
+  display: flex;
+  margin-left: 30%;
+}
+
+.bottom-left-last {
+  margin-left: 6%;
+}
+
+.post-ratings-container {
+  display: flex;
+  justify-content: end;
+  padding: 12px 0;
+}
+
+.post-rating {
+  display: flex;
+  align-items: center;
+  cursor: default;
+  font-family: "Inter";
+  font-size: 20px;
+}
+
+.post-rating:not(:last-child) {
+  margin-right: 30px;
+}
+
+.post-rating-selected > .post-rating-button,
+.post-rating-selected > .post-rating-count {
+  color: #ffa800;
+}
+
+.post-rating-button {
+  margin-right: 6px;
+  cursor: pointer;
+  color: #555555;
+}
+
+.post-rating:not(.post-rating-selected) > .post-rating-button:hover {
+  color: #ffa800;
+}
+
+.helpful {
+  padding-right: 40px;
+}
+
+.right-container {
+  margin-left: 2%;
+  margin-top: 10%;
+  border: #ffa800 solid 1px;
+  border-radius: 50px;
+}
+
+.discover-header-container {
+  padding-top: 4%;
+  width: 28%;
+  height: 40%;
+}
+
+.discover-header {
+  text-align: center;
+  align-items: center;
+}
+
+.discover-header {
+  font-family: "Outfit";
+  font-size: 48px;
+}
+
+.whole-discover {
+  border: solid 1px #ffa800;
+  border-radius: 50px;
+  height: 100%;
+  margin-left: 2%;
+}
+
+.establishment-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 4%;
+}
+
+.establishment-last-name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.num-post {
+  font-size: 14ppx;
+  font-weight: light;
+  text-align: left;
+  color: gray;
+}
+
+.rating-discover {
+  text-align: right;
+  color: #ffa800;
+  font-size: 22ppx;
+  font-weight: light;
+}
+
+/* HEADER
+
+  .search {
+  margin-left: 680px;
+  margin-top: 1%;
+}
+
+/* Adjust other styles as needed */
+
+.search input {
+  height: 40px;
+  width: 300px;
+  margin-top: -1%;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-input::placeholder {
+  font-family: "Inter";
+  font-size: 22px;
+}
+
+.search-form button {
+  margin-left: 3px;
+  margin-top: -2%;
+  padding: 10px;
+  padding-left: 10px;
+  background-color: #ffa800;
+  color: #fff;
+  font-size: 30px;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+}
+
+.search-form button:hover {
+  color: #ff5300;
+}
+
+.whole {
+  background-image: url();
+  display: flex;
+}
+
+#home-icon {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 5px;
+  margin-right: 20px; /* Adjust margin as needed */
+}
+#home-icon:hover {
+  color: #ff5300; /* Change color on hover */
+}
+
+.eggy-form {
+  width: 11%;
+  padding-left: 20px;
+}
+
+#home-icon,
+#explore-icon {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 5px;
+  margin-right: 20px; /* Adjust margin as needed */
+}
+#home-icon:hover,
+#explore-icon:hover {
+  color: #ff5300; /* Change color on hover */
+}
+
+.eggy-form {
+  width: 11%;
+  padding-left: 20px;
+}
+
+#eggy-logo {
+  width: 11%;
+  padding-left: 20px;
+}
+
+.whole {
+  background-image: url();
+  display: flex;
+  overflow: auto;
+}
+.sort-options {
+  left: 0; /* Fix the position to the left */
+  width: 250px; /* Set a fixed width */
+  margin-top: 9%;
+  padding-left: 1%;
+  border: 2px solid #0c382b;
+  margin-left: 2%;
+  height: 50vh;
+  font-family: "Outfit";
+}
+
+.checked {
+  color: orange;
+}
+.stars-rating {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 5%;
+  margin-left: 8%;
+}
+#apply-button {
+  margin-top: 5%;
+  width: 90%;
+  padding: 2%;
+  background-color: #ffa800;
+  border-radius: 50px;
+  font-family: "Outfit";
+  font-size: 20px;
+}
+#apply-button:hover {
+  background-color: #ff5300;
+  color: #fff;
+}
+/* Custom styles for the checkbox */
+.custom-checkbox {
+  appearance: none; /* Remove default appearance */
+  width: 20px; /* Make the checkbox bigger */
+  height: 20px;
+  margin-right: 5%;
+  border-radius: 5px; /* Round the corners */
+  background-color: gray;
+  border: black;
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Style for the checked state */
+.custom-checkbox:checked {
+  background-color: #ffa800; /* Change background color when checked */
+}
+
+.top-header {
+  display: flex;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensure it's pinned to the left */
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffa800; /* Example background color */
+  color: #fff; /* Example text color */
+  padding: 8px; /* Adjust padding */
+  z-index: 1000; /* Ensure it's above other content */
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.top-profile {
+  order: 1; /* Move "Home" to the left */
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  background-color: #fff;
+  border: none; /* Remove border */
+  color: #fff;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  width: 50px; /* Adjust width to whatever you need */
+  height: 50px; /* Adjust height to match width for a perfect circle */
+  margin-right: 3%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#go-profile {
+  display: block;
+  width: 100%;
+  background-color: #ffa800;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#profile-pic {
+  width: 80%;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+.search {
+  display: flex;
+  margin-left: 680px;
+  margin-top: 1%;
+}
+
+/* Adjust other styles as needed */
+
+.search input {
+  height: 40px;
+  width: 300px;
+  margin-top: -1%;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-input::placeholder {
+  font-family: "Inter";
+  font-size: 22px;
+}
+
+.search-form button {
+  margin-left: 3px;
+  margin-top: -2%;
+  padding: 10px;
+  padding-left: 10px;
+  background-color: #ffa800;
+  color: #fff;
+  font-size: 30px;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+}
+
+.search-form button:hover {
+  color: #ff5300;
+}
+
+#establishment-title {
+  align-items: center;
+  align-content: center;
+  margin-left: 6%;
+  margin-top: 11%;
+  font-size: 30px;
+  margin-bottom: 0;
+  font-family: "Outfit";
+}
+
+.top-header {
+  display: flex;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensure it's pinned to the left */
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffa800; /* Example background color */
+  color: #fff; /* Example text color */
+  padding: 8px; /* Adjust padding */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.opt-titles {
+  margin-right: 20px;
+}
+
+.opt-titles-curr {
+  margin-right: 20px;
+  text-decoration: underline; /* Add underline when hovered */
+  text-decoration-color: white;
+  text-decoration-thickness: 5px;
+}
+
+.top-profile {
+  order: 1; /* Move "Home" to the left */
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  background-color: #fff;
+  border: none; /* Remove border */
+  color: #fff;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  width: 70px; /* Adjust width to whatever you need */
+  height: 70px; /* Adjust height to match width for a perfect circle */
+  margin-left: 25px;
+  margin-right: 5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-profile:hover .options {
+  visibility: visible;
+}
+
+#eggy-logo {
+  width: 11%;
+  padding-left: 20px;
+}
+
+#profile-pic {
+  width: 80%;
+  margin-left: 7px;
+  border-radius: 50%;
+}
+
+.options {
+  visibility: hidden;
+  position: absolute;
+  top: calc(100%);
+  left: -50%; /* Position options on the left side */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.go-profile {
+  display: block;
+  width: 100%;
+  background-color: #ffa800;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.go-profile:hover,
+#login:hover {
+  background-color: #ff5300;
+}
+
+#login {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  border: 2px solid #ffa800; /* Added solid border */
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#profile-pic {
+  width: 80%;
+  margin-left: 7px;
+  border-radius: 50%;
+}
+
+.header-options a {
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-options :hover {
+  text-decoration: underline; /* Add underline when hovered */
+  text-decoration-color: #fff;
+  text-decoration-thickness: 5px;
+  transition: all 0.3s ease;
+}
+
+footer {
+  background-color: #ffa800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  height: 80px;
+}
+
+footer > h1 {
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-container {
+  margin-left: auto;
+
+  width: 30%;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+}
+
+.right-container > button {
+  border-color: black;
+  border-width: 1px;
+  border-radius: 20px;
+  border-style: solid;
+  padding: 2% 8%;
+  background-color: white;
+  text-align: center;
+  color: black;
+  margin-right: 0px;
+}
+
+#signup:hover {
+  background-color: #ff5300;
+  color: white;
+  border-color: #ff5300;
+}
+
+#log-in:hover {
+  background-color: #ff5300;
+  color: white;
+  border-color: #ff5300;
+}
+
+#avatar-logo:hover {
+  transform: scale(1.3);
+}
+
+.right-container > img {
+  border-radius: 50%;
+
+  height: 40px;
+  width: 40px;
+
+  border-style: solid;
+  border-width: 1px;
+}
+
+.logo-container {
+  box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.4);
+  background-color: white;
+
+  border-radius: 45px;
+
+  height: 90px;
+  width: 200px;
+
+  margin-left: 5%;
+  margin-top: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container > img {
+  border-width: 1px;
+  height: 75px;
+  width: 160px;
+}
+.top-display {
+  display: flex;
+}
+hr {
+  height: 2px; /* Adjust the height as needed */
+  background-color: #e6e6e6; /* Change the color if desired */
+  border: none; /* Remove default border */
+  margin-top: 3%;
+
+  width: 104%;
+}
+
+/* END HEADER */
+
+.popup-login {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 1540px;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-login-content {
+  height: 300px;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  box-sizing: border-box; /* to prevent padding from making the div bigger*/
+  padding: 50px;
+
+  border: 2px solid #ffa800;
+
+  position: relative;
+}
+
+.popup-login-content > img {
+  height: 50px;
+  width: 100px;
+}
+
+.popup-login-content > input {
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+  border-width: 1px;
+
+  margin: 20px auto;
+  display: block;
+
+  box-sizing: border-box; /* to prevent padding from making the div bigger*/
+  padding-left: 5px;
+}
+
+.popup-login-content > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  position: absolute;
+  top: -65px;
+  right: -40px;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffa800;
+
+  cursor: pointer;
+}
+
+.login-button {
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 20px;
+  border-style: solid;
+  padding: 5px 10px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.login-button:hover {
+  background-color: #ffa800;
+  color: white;
+  border-color: #ffa800;
+}
+
+.popup-signup {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 1540px;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-signup-content {
+  height: 300px;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  box-sizing: border-box; /* to prevent padding from making the div bigger*/
+  padding: 15px;
+
+  border: 2px solid #ffa800;
+
+  position: relative;
+}
+
+.popup-signup-content > img {
+  height: 50px;
+  width: 100px;
+}
+
+.popup-signup-content > input {
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+  border-width: 1px;
+
+  margin: 20px auto;
+  display: block;
+
+  box-sizing: border-box; /* to prevent padding from making the div bigger*/
+  padding-left: 5px;
+}
+
+.popup-signup-content > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  position: absolute;
+  top: -65px;
+  right: -40px;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffa800;
+
+  cursor: pointer;
+}
